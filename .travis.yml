@@ -2,9 +2,15 @@ sudo: false
 
 language: node_js
 node_js:
-  - '9'
+  - '10'
   - '8'
 cache: yarn
 branches:
   only:
     - master
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script:
+    - yarn travis-deploy-once "yarn semantic-relese"

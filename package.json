@@ -1,6 +1,6 @@
 {
   "name": "compose-ref",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "main": "lib/index.js",
   "modules": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -20,7 +20,9 @@
     "prepublishOnly": "yarn run build",
     "lint": "eslint . && prettier --list-different --ignore-path .eslintignore '**/*.{json,css,md}'",
     "format": "eslint . --fix && prettier --write --ignore-path .eslintignore '**/*.{json,css,md}'",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "publishConfig": {
     "access": "public"
@@ -71,7 +73,9 @@
     "lint-staged": "^7.1.0",
     "prettier": "^1.10.2",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "semantic-release": "^15.6.3",
+    "travis-deploy-once": "^5.0.1"
   },
   "dependencies": {
     "invariant": "^2.2.4"
