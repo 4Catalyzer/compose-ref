@@ -13,4 +13,4 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-    - yarn travis-deploy-once "yarn semantic-relese"
+    - yarn travis-deploy-once "yarn semantic-release"
