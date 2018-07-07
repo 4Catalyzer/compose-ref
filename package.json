@@ -2,8 +2,7 @@
   "name": "compose-ref",
   "version": "0.0.0-development",
   "main": "lib/index.js",
-  "modules": "es/index.js",
-  "jsnext:main": "es/index.js",
+  "module": "es/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/4Catalyzer/compose-ref.git"
@@ -20,9 +19,7 @@
     "prepublishOnly": "yarn run build",
     "lint": "eslint . && prettier --list-different --ignore-path .eslintignore '**/*.{json,css,md}'",
     "format": "eslint . --fix && prettier --write --ignore-path .eslintignore '**/*.{json,css,md}'",
-    "precommit": "lint-staged",
-    "semantic-release": "semantic-release",
-    "travis-deploy-once": "travis-deploy-once"
+    "precommit": "lint-staged"
   },
   "publishConfig": {
     "access": "public"
@@ -70,6 +67,7 @@
     "eslint-plugin-prettier": "^2.5.0",
     "eslint-plugin-react": "^7.5.1",
     "husky": "^0.14.3",
+    "jest": "^23.3.0",
     "lint-staged": "^7.1.0",
     "prettier": "^1.10.2",
     "react": "^16.4.1",
