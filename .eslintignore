@@ -4,3 +4,4 @@ es/
 **/fixtures/**
 **/package.json
 **/CHANGELOG.md
+.vscode/
