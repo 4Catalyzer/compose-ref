@@ -76,6 +76,7 @@
     "travis-deploy-once": "^5.0.1"
   },
   "dependencies": {
-    "invariant": "^2.2.4"
+    "invariant": "^2.2.4",
+    "memoize-one": "^4.0.0"
   }
 }

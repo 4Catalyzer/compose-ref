@@ -36,4 +36,14 @@ describe('composeRef', () => {
 
     expect(() => ref({})).not.toThrow();
   });
+
+  it('should memoize calls', () => {
+    const ref = React.createRef();
+    const setRef = () => {};
+
+    // eslint-disable-next-line no-self-compare
+    expect(composeRef(ref, setRef) === composeRef(ref, setRef)).toEqual(true);
+
+    expect(composeRef(ref, setRef) === composeRef(ref, null)).toEqual(false);
+  });
 });
