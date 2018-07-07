@@ -1,6 +1,6 @@
 {
   "name": "compose-ref",
-  "version": "0.0.0-development",
+  "version": "0.0.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "repository": {
