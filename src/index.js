@@ -9,7 +9,7 @@ export default function composeRefs(...refs) {
   return current => {
     for (const ref of refs) {
       if (typeof ref === 'function') ref(current);
-      else ref.current = current;
+      else if (ref != null) ref.current = current;
     }
   };
 }

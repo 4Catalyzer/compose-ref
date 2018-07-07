@@ -30,4 +30,10 @@ describe('composeRef', () => {
       'Cannot compose string refs!',
     );
   });
+
+  it('should handle nully values', () => {
+    const ref = composeRef(React.createRef(), () => {}, null);
+
+    expect(() => ref({})).not.toThrow();
+  });
 });
